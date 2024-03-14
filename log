@@ -1,0 +1,10 @@
+Thu 14 Mar 2024 09:09:01 PM UTC: 
+ exercises.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:46:29: error: lvalue required as increment operand
+   46 |   for(int i = 0 ; i < 10 ; 1++)
+      |                             ^~
+Compilation failed
+a35de4a
