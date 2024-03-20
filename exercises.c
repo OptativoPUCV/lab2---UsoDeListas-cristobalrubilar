@@ -100,12 +100,7 @@ Puedes usar una pila auxiliar.
 
 void copia_pila(Stack* P1, Stack* P2)
 {
-  int *dato = first(P1);
-  for (int i = 0 ; i < get_size(P1) ; i++)
-    {
-      push(P2, dato);
-      dato = next(P1);
-    }
+
 }
 
 /*
