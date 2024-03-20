@@ -82,3 +82,21 @@ exercises.c:88:9: error: implicit declaration of function ‘pupCurrent’; did 
 cc1: all warnings being treated as errors
 Compilation failed
 987e0a9
+Wed 20 Mar 2024 02:00:05 AM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:88:9: error: implicit declaration of function ‘pupCurrent’; did you mean ‘popCurrent’? [-Werror=implicit-function-declaration]
+   88 |         pupCurrent(L);
+      |         ^~~~~~~~~~
+      |         popCurrent
+exercises.c:89:17: error: dereferencing ‘void *’ pointer [-Werror]
+   89 |         *dato = *(next(L));
+      |                 ^~~~~~~~~~
+exercises.c:89:15: error: void value not ignored as it ought to be
+   89 |         *dato = *(next(L));
+      |               ^
+cc1: all warnings being treated as errors
+Compilation failed
+2093100
