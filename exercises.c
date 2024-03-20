@@ -85,8 +85,7 @@ void eliminaElementos(List*L, int elem)
     {
       if (*dato == elem)
       {
-        pupCurrent(L);
-        *dato = *(next(L));
+        pupCurrent(*dato);
       }
     }
 }

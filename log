@@ -100,3 +100,15 @@ exercises.c:89:15: error: void value not ignored as it ought to be
 cc1: all warnings being treated as errors
 Compilation failed
 2093100
+Wed 20 Mar 2024 02:00:43 AM UTC: 
+ exercises.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:88:9: error: implicit declaration of function ‘pupCurrent’; did you mean ‘popCurrent’? [-Werror=implicit-function-declaration]
+   88 |         pupCurrent(*dato);
+      |         ^~~~~~~~~~
+      |         popCurrent
+cc1: all warnings being treated as errors
+Compilation failed
+235da95
