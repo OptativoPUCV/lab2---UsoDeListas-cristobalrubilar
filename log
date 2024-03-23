@@ -334,3 +334,56 @@ exercises.c:151:22: error: comparison with string literal results in unspecified
 cc1: all warnings being treated as errors
 Compilation failed
 757ed29
+Sat 23 Mar 2024 02:44:43 AM UTC: 
+ exercises.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:131:17: error: comparison between pointer and integer [-Werror]
+  131 |     if (*cadena == "[" || *cadena == "{" || *cadena == "(")
+      |                 ^~
+exercises.c:131:17: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:131:35: error: comparison between pointer and integer [-Werror]
+  131 |     if (*cadena == "[" || *cadena == "{" || *cadena == "(")
+      |                                   ^~
+exercises.c:131:35: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:131:53: error: comparison between pointer and integer [-Werror]
+  131 |     if (*cadena == "[" || *cadena == "{" || *cadena == "(")
+      |                                                     ^~
+exercises.c:131:53: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:137:19: error: comparison between pointer and integer [-Werror]
+  137 |       if (*cadena == "]" || *cadena == "}" || *cadena == ")")
+      |                   ^~
+exercises.c:137:19: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:137:37: error: comparison between pointer and integer [-Werror]
+  137 |       if (*cadena == "]" || *cadena == "}" || *cadena == ")")
+      |                                     ^~
+exercises.c:137:37: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:137:55: error: comparison between pointer and integer [-Werror]
+  137 |       if (*cadena == "]" || *cadena == "}" || *cadena == ")")
+      |                                                       ^~
+exercises.c:137:55: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:139:21: error: comparison between pointer and integer [-Werror]
+  139 |         if (*cadena == "]")
+      |                     ^~
+exercises.c:139:21: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:141:22: error: comparison with string literal results in unspecified behavior [-Werror=address]
+  141 |           if (pop(P) != "[")
+      |                      ^~
+exercises.c:144:21: error: comparison between pointer and integer [-Werror]
+  144 |         if (*cadena == "}")
+      |                     ^~
+exercises.c:144:21: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:146:22: error: comparison with string literal results in unspecified behavior [-Werror=address]
+  146 |           if (pop(P) != "}")
+      |                      ^~
+exercises.c:149:21: error: comparison between pointer and integer [-Werror]
+  149 |         if (*cadena == ")")
+      |                     ^~
+exercises.c:149:21: error: comparison with string literal results in unspecified behavior [-Werror=address]
+exercises.c:151:22: error: comparison with string literal results in unspecified behavior [-Werror=address]
+  151 |           if (pop(P) != ")")
+      |                      ^~
+cc1: all warnings being treated as errors
+Compilation failed
+b0790d8
