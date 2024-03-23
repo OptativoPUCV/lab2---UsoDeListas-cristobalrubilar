@@ -638,3 +638,20 @@ exercises.c:129:10: error: invalid type argument of unary ‘*’ (have ‘int�
       |          ^~~~~~~~~~
 Compilation failed
 676c0cf
+Sat 23 Mar 2024 03:00:52 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:131:16: error: comparison between pointer and integer [-Werror]
+  131 |     if (cadena == '[' || cadena == '{' || cadena == '(')
+      |                ^~
+exercises.c:131:33: error: comparison between pointer and integer [-Werror]
+  131 |     if (cadena == '[' || cadena == '{' || cadena == '(')
+      |                                 ^~
+exercises.c:131:50: error: comparison between pointer and integer [-Werror]
+  131 |     if (cadena == '[' || cadena == '{' || cadena == '(')
+      |                                                  ^~
+cc1: all warnings being treated as errors
+Compilation failed
+77eda16
