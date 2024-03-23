@@ -628,3 +628,13 @@ Sat 23 Mar 2024 02:58:31 AM UTC:
  tests:  4|1
 total_score: 50/70
 827606e
+Sat 23 Mar 2024 03:00:26 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:129:10: error: invalid type argument of unary ‘*’ (have ‘int’)
+  129 |   while (*cadena[i] != '\0')
+      |          ^~~~~~~~~~
+Compilation failed
+676c0cf
