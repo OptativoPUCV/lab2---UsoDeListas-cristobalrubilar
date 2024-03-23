@@ -149,3 +149,16 @@ exercises.c:103:15: error: initialization of ‘Stack *’ {aka ‘List *’} fr
 cc1: all warnings being treated as errors
 Compilation failed
 2a89388
+Sat 23 Mar 2024 02:24:12 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:103:15: error: implicit declaration of function ‘createStack’; did you mean ‘create_stack’? [-Werror=implicit-function-declaration]
+  103 |   Stack *P3 = createStack();
+      |               ^~~~~~~~~~~
+      |               create_stack
+exercises.c:103:15: error: initialization of ‘Stack *’ {aka ‘List *’} from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+cc1: all warnings being treated as errors
+Compilation failed
+166794b
