@@ -466,3 +466,32 @@ exercises.c:151:22: error: comparison with string literal results in unspecified
 cc1: all warnings being treated as errors
 Compilation failed
 0d20758
+Sat 23 Mar 2024 02:49:17 AM UTC: 
+ exercises.c | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:137:36: error: comparison between pointer and integer [-Werror]
+  137 |       if (*cadena == ']' || cadena == '}' || cadena == ')')
+      |                                    ^~
+exercises.c:137:53: error: comparison between pointer and integer [-Werror]
+  137 |       if (*cadena == ']' || cadena == '}' || cadena == ')')
+      |                                                     ^~
+exercises.c:141:22: error: comparison between pointer and integer [-Werror]
+  141 |           if (pop(P) != '[' || pop(P) == NULL))
+      |                      ^~
+exercises.c:141:47: error: expected statement before ‘)’ token
+  141 |           if (pop(P) != '[' || pop(P) == NULL))
+      |                                               ^
+exercises.c:146:22: error: comparison between pointer and integer [-Werror]
+  146 |           if (pop(P) != '}' || pop(P) == NULL)
+      |                      ^~
+exercises.c:151:22: error: comparison between pointer and integer [-Werror]
+  151 |           if (pop(P) != ')' || pop(P) == NULL))
+      |                      ^~
+exercises.c:151:47: error: expected statement before ‘)’ token
+  151 |           if (pop(P) != ')' || pop(P) == NULL))
+      |                                               ^
+cc1: all warnings being treated as errors
+Compilation failed
+38c4829
