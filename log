@@ -495,3 +495,20 @@ exercises.c:151:47: error: expected statement before ‘)’ token
 cc1: all warnings being treated as errors
 Compilation failed
 38c4829
+Sat 23 Mar 2024 02:49:45 AM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:141:22: error: comparison between pointer and integer [-Werror]
+  141 |           if (pop(P) != '[' || pop(P) == NULL)
+      |                      ^~
+exercises.c:146:22: error: comparison between pointer and integer [-Werror]
+  146 |           if (pop(P) != '}' || pop(P) == NULL)
+      |                      ^~
+exercises.c:151:22: error: comparison between pointer and integer [-Werror]
+  151 |           if (pop(P) != ')' || pop(P) == NULL)
+      |                      ^~
+cc1: all warnings being treated as errors
+Compilation failed
+2ce9018
