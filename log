@@ -535,3 +535,13 @@ exercises.c:144:15: error: unused variable ‘dato’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 be827df
+Sat 23 Mar 2024 02:54:50 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:138:11: error: invalid use of incomplete typedef ‘Stack’ {aka ‘List’}
+  138 |       if(P->top == NULL)
+      |           ^~
+Compilation failed
+ee3f671
