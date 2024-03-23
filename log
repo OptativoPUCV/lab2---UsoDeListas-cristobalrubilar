@@ -512,3 +512,26 @@ exercises.c:151:22: error: comparison between pointer and integer [-Werror]
 cc1: all warnings being treated as errors
 Compilation failed
 2ce9018
+Sat 23 Mar 2024 02:54:23 AM UTC: 
+ exercises.c | 19 +++++++------------
+ 1 file changed, 7 insertions(+), 12 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:138:11: error: invalid use of incomplete typedef ‘Stack’ {aka ‘List’}
+  138 |       if(P->top == NULL)
+      |           ^~
+exercises.c:145:39: error: comparison between pointer and integer [-Werror]
+  145 |         if ((cadena[i] == ']' && *top != '[') || (cadena[i] == '}' &&           *top != '{') || (cadena[i] == ')' && *top != '('))
+      |                                       ^~
+exercises.c:145:86: error: comparison between pointer and integer [-Werror]
+  145 |         if ((cadena[i] == ']' && *top != '[') || (cadena[i] == '}' &&           *top != '{') || (cadena[i] == ')' && *top != '('))
+      |                                                                                      ^~
+exercises.c:145:123: error: comparison between pointer and integer [-Werror]
+  145 |         if ((cadena[i] == ']' && *top != '[') || (cadena[i] == '}' &&           *top != '{') || (cadena[i] == ')' && *top != '('))
+      |                                                                                                                           ^~
+exercises.c:144:15: error: unused variable ‘dato’ [-Werror=unused-variable]
+  144 |         char *dato = (char*)pop(P);
+      |               ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+be827df
