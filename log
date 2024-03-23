@@ -431,3 +431,38 @@ exercises.c:151:22: error: comparison with string literal results in unspecified
 cc1: all warnings being treated as errors
 Compilation failed
 722305e
+Sat 23 Mar 2024 02:45:50 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:137:18: error: comparison with string literal results in unspecified behavior [-Werror=address]
+  137 |       if (cadena == "]" || cadena == "}" || cadena == ")")
+      |                  ^~
+exercises.c:137:35: error: comparison with string literal results in unspecified behavior [-Werror=address]
+  137 |       if (cadena == "]" || cadena == "}" || cadena == ")")
+      |                                   ^~
+exercises.c:137:52: error: comparison with string literal results in unspecified behavior [-Werror=address]
+  137 |       if (cadena == "]" || cadena == "}" || cadena == ")")
+      |                                                    ^~
+exercises.c:139:20: error: comparison with string literal results in unspecified behavior [-Werror=address]
+  139 |         if (cadena == "]")
+      |                    ^~
+exercises.c:141:22: error: comparison with string literal results in unspecified behavior [-Werror=address]
+  141 |           if (pop(P) != "[")
+      |                      ^~
+exercises.c:144:20: error: comparison with string literal results in unspecified behavior [-Werror=address]
+  144 |         if (cadena == "}")
+      |                    ^~
+exercises.c:146:22: error: comparison with string literal results in unspecified behavior [-Werror=address]
+  146 |           if (pop(P) != "}")
+      |                      ^~
+exercises.c:149:20: error: comparison with string literal results in unspecified behavior [-Werror=address]
+  149 |         if (cadena == ")")
+      |                    ^~
+exercises.c:151:22: error: comparison with string literal results in unspecified behavior [-Werror=address]
+  151 |           if (pop(P) != ")")
+      |                      ^~
+cc1: all warnings being treated as errors
+Compilation failed
+0d20758
